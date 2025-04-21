@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurryFriends Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fafafa;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #6a1b9a;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      padding: 6px 30px 6px 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .search-box::after {
+      content: '🔍';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .buttons button {
+      padding: 6px 15px;
+      border: none;
+      border-radius: 20px;
+      background-color: #6a1b9a;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 2rem;
+      
+      
+
+    }
+
+    .hero-text {
+      max-width: 50%;
+      margin-top: -150px;
+    }
+
+    .hero-text h1 {
+      color: #0a915d;
+      font-size: 2rem;
+    }
+
+    .hero-text span {
+      color: #6a1b9a;
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .hero-image img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .content__image{
+      background-image: url("image/IMG_20250414_185059.jpg");
+      width: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: -30px;
+      height: 550px;
+
+    }
+    .services {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      justify-content: space-evenly;
+
+     }
+     .cardd{
+      width: 30%;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 30px;
+
+
+     }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text, .hero-image {
+        max-width: 100%;
+      }
+    
+     .services {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      justify-content: space-evenly;
+
+     }
+     .cardd{
+      width: 30%;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 30px;
+
+
+     }
+
+
+
+    
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Furry Friends</div>
+    <nav>
+      <a href="#">Adopt</a>
+      <a href="#">Rehome</a>
+      <a href="#">Care Guide</a>
+      <a href="#">About Us</a>
+    </nav>
+    <div class="header-right">
+      <div class="search-box">
+        <input type="text" placeholder="search...">
+      </div>
+      <div class="buttons">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Give a New Life to <br><span>Furry Friends</span></h1>
+      <p>
+        Pet adoption and rehoming are both vital aspects of animal welfare, offering hope and a fresh start to pets in need. Open your heart and your home to a shelter pet.
+      </p>
+    </div>
+    <div class="content__image">
+       
+    </div>
+  </section>
+  <h2 style="text-align: center;font-size: 40px ; font-family: Arial, Helvetica, sans-serif; color: black;">
+    Adopt or Rehome the Pet in just 
+  </h2>
+  <h3 style="text-align: center;font-size: 25px ; font-family: Arial, Helvetica, sans-serif; color: green;">3 Easy Steps</h3>
+
+  <section class="services">
+
+  <div class="services">
+    <div class="cardd">
+      <img src="./image/1.svg" width="20%" alt="">
+      <p>set up your profile (including photos) in minutes</p>
+    </div>
+    <div class="cardd">
+      <img src="./image/2.svg" width="20%" alt="">
+      <p>describe your home and routine so rehomers can see if it's right for their Pet </p>
+    </div>
+    <div class="cardd">
+      <img src="./image/3.svg" width="20%" alt="">
+      <p>start your search</p>
+      
+    </div>
+  </div>
+
+
+
+
+
+</section>
+</body>
+</html><!DOCTYPE html>
